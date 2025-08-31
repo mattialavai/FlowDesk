@@ -1,4 +1,4 @@
-import { Moon, Sun, User, Menu } from 'lucide-react';
+import { Moon, Sun, User, Bell } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/contexts/ThemeContext';
 import {
@@ -17,19 +17,30 @@ export function TopNavbar() {
   return (
     <header className="h-16 border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-40">
       <div className="flex items-center justify-between h-full px-6">
-        <div className="flex items-center gap-4">
+        {/* Left: Sidebar + Search */}
+        <div className="flex items-center gap-4 flex-1">
           <SidebarTrigger className="h-8 w-8" />
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">FD</span>
-            </div>
-            <h1 className="text-xl font-semibold text-foreground">
-              FlowDesk Dashboard
-            </h1>
+          <div className="flex-1 max-w-md">
+            <input
+              type="text"
+              placeholder="Search..."
+              className="w-full px-3 py-2 rounded-md border border-input bg-background text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+            />
           </div>
         </div>
 
+        {/* Right: Notifications + Theme + Profile */}
         <div className="flex items-center gap-4">
+          {/* Notifications */}
+          <Button
+            variant="ghost"
+            size="sm"
+            className="h-9 w-9 relative"
+          >
+            <Bell className="h-5 w-5" />
+            <span className="absolute top-1 right-1 block h-2 w-2 rounded-full bg-red-500"></span>
+          </Button>
+
           {/* Theme Toggle */}
           <Button
             variant="ghost"
@@ -64,12 +75,8 @@ export function TopNavbar() {
                 </p>
               </div>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>
-                Profile Settings
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                Account Settings
-              </DropdownMenuItem>
+              <DropdownMenuItem>Profile Settings</DropdownMenuItem>
+              <DropdownMenuItem>Account Settings</DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem className="text-destructive">
                 Log out

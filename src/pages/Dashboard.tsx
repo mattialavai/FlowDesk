@@ -41,9 +41,9 @@ export default function Dashboard() {
     <div className="space-y-8">
       {/* Header */}
       <div>
-        <h1 className="text-3xl font-bold text-foreground">Dashboard</h1>
+        <h1 className="text-3xl font-bold text-foreground">Welcome to FlowDesk Technologies dashboard</h1>
         <p className="text-muted-foreground mt-2">
-          Welcome to your FlowDesk Technologies dashboard
+          Organize your work, sync your team, and flow through tasks with ease.
         </p>
       </div>
 
@@ -81,12 +81,14 @@ export default function Dashboard() {
         <CardContent className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
             <div className="space-y-2">
-              <h4 className="font-medium text-card-foreground">Features Included:</h4>
+              <h4 className="font-medium text-card-foreground">Core Features:</h4>
               <ul className="text-muted-foreground space-y-1">
-                <li>• Responsive sidebar navigation</li>
-                <li>• User management with CRUD operations</li>
-                <li>• Modal-based user details & editing</li>
-                <li>• Search functionality</li>
+                <li>• Dashboard – clean overview of tasks & users</li>
+                <li>• Task Management – create, update, delete tasks</li>
+                <li>• Team Management – view & manage users</li>
+                <li>• Search & Filters – find tasks/users quickly</li>
+                <li>• Dark/Light Mode – theme toggle</li>
+                <li>• Responsive Layout – mobile & desktop friendly</li>
               </ul>
             </div>
             <div className="space-y-2">
