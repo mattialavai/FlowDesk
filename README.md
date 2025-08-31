@@ -1,75 +1,127 @@
-# Welcome to your Lovable project
+**FlowDesk – Smart Task & Team Management Dashboard**
 
-## Project info
+**Tagline:** “Organize your work, sync your team, and flow through tasks with ease.”
 
-**URL**: https://lovable.dev/projects/999d1ff3-290a-4641-b510-9df07ff89347
+FlowDesk is a modern, responsive, and user-friendly task & team management dashboard built with React + Vite. Designed for productivity, it allows teams to manage tasks, collaborate efficiently, and stay in sync with a clean and intuitive UI.
 
-## How can I edit this code?
+✨ Core Features (MVP ✅)
 
-There are several ways of editing your application.
+📊 Dashboard – Clean overview of tasks & users
 
-**Use Lovable**
+🗂️ Task Management – Create, update, and delete tasks
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/999d1ff3-290a-4641-b510-9df07ff89347) and start prompting.
+👥 Team Management – View and manage users
 
-Changes made via Lovable will be committed automatically to this repo.
+🔎 Search & Filters – Quickly find tasks/users
 
-**Use your preferred IDE**
+🌗 Dark/Light Mode – Theme toggle for personalization
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+📱 Responsive Layout – Works seamlessly on mobile & desktop
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**🚀 Expansion (Future Scope 🚀)
+**
+🔐 Authentication (login, roles: Admin / Member)
 
-Follow these steps:
+📆 Deadlines, reminders, and progress tracking
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+📈 Analytics dashboard (task completion rates, team productivity)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+🔔 Real-time notifications
 
-# Step 3: Install the necessary dependencies.
-npm i
+🌍 Multi-language support for global teams
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+📤 Export reports (PDF, CSV)
+
+**🛠️ Tech Stack**
+
+⚡ Vite
+ – Next-generation frontend tooling
+
+⚛️ React
+ – UI library
+
+🎨 Tailwind CSS
+ – Utility-first styling
+
+🧩 ShadCN/UI
+ – Accessible, modern components
+
+🔗 Axios
+ – Data fetching
+
+📦 TanStack Query
+ – API state management
+
+📝 React Hook Form
+ + Yup
+ – Form handling & validation
+
+🎭 Lucide Icons
+ – Beautiful open-source icons
+
+**📂 Project Structure**
+flowdesk/
+├── public/              # Static assets
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── contexts/        # React context providers
+│   ├── hooks/           # Custom hooks
+│   ├── lib/             # Utility functions
+│   ├── pages/           # Application pages (Dashboard, Users, etc.)
+│   ├── services/        # API services
+│   ├── App.tsx          # App root
+│   └── main.tsx         # Entry point
+├── index.html
+├── package.json
+├── vite.config.ts
+└── tailwind.config.ts
+
+**⚡ Getting Started**
+1️⃣ Clone Repository
+npx create-react-flowdesk-dashboar-quest
+cd flowdesk-dashboard-quest
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Start Development Server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+4️⃣ Build for Production
+npm run build
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+5️⃣ Preview Production Build
+npm run preview
 
-**Use GitHub Codespaces**
+**📸 Screenshots**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+<img width="1358" height="682" alt="Screenshot (188)" src="https://github.com/user-attachments/assets/98fa4d29-d166-468e-a587-76df22ec2f8b" />
 
-## What technologies are used for this project?
 
-This project is built with:
+**🧑‍💻 Contributing**
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Contributions are welcome!
 
-## How can I deploy this project?
+Fork the repo
 
-Simply open [Lovable](https://lovable.dev/projects/999d1ff3-290a-4641-b510-9df07ff89347) and click on Share -> Publish.
+Create a feature branch:
 
-## Can I connect a custom domain to my Lovable project?
+git checkout -b feature/awesome-feature
 
-Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Commit your changes:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
-# FlowDesk
-# FlowDesk
+git commit -m "Add awesome feature"
+
+
+Push and create a Pull Request
+
+**📄 License**
+
+This project is licensed under the MIT License.
+
+**🌟 Project Identity**
+
+Project Name: FlowDesk
+Purpose: Smart Task & Team Management Dashboard
+Tagline: “Organize your work, sync your team, and flow through tasks with ease.”
